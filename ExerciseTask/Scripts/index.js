@@ -14,7 +14,7 @@ $('#editExerciseDate').blur(function () {
 
 var appModule = angular.module('indexModule', []);
 
-appModule.controller('DataController', function ($scope, $http) {
+appModule.controller('DataController',["$scope", "$http", function ($scope, $http) {
     $scope.currentPage = 1;
     $scope.pageTotalSize = 1;
     $scope.exerciseList = [];
@@ -116,5 +116,5 @@ appModule.controller('DataController', function ($scope, $http) {
     };
 
     $scope.init();
-});
+}]);
 
