@@ -1,5 +1,6 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using System.Web.Services.Description;
 
 [assembly: OwinStartupAttribute(typeof(ExerciseTask.Startup))]
 namespace ExerciseTask
@@ -8,7 +9,7 @@ namespace ExerciseTask
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            //ConfigureAuth(app);
         }
     }
 }

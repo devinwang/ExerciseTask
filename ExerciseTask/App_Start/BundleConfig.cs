@@ -26,6 +26,21 @@ namespace ExerciseTask
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/bootstrap-datetimepicker").Include(
+                      "~/Content/bootstrap-datetimepicker.css"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                        "~/Scripts/angular.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/index").Include(
+                        "~/Scripts/validator.js", "~/Scripts/index.js", "~/Scripts/angular-ui/ui-bootstrap.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap-datetimepicker").Include(
+            "~/Scripts/moment.js", "~/Scripts/bootstrap-datetimepicker.js"));
+
+
         }
     }
 }
