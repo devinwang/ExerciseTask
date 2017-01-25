@@ -12,7 +12,7 @@ $('#editExerciseDate').blur(function () {
     $('#editExerciseDate').trigger('change');
 })
 
-var appModule = angular.module('indexModule', ['ui.bootstrap']);
+var appModule = angular.module('indexModule', []);
 
 appModule.controller('DataController', function ($scope, $http) {
     $scope.currentPage = 1;

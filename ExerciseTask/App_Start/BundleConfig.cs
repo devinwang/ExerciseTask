@@ -35,7 +35,7 @@ namespace ExerciseTask
                         "~/Scripts/angular.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/index").Include(
-                        "~/Scripts/validator.js", "~/Scripts/index.js", "~/Scripts/angular-ui/ui-bootstrap.js"));
+                         "~/Scripts/index.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap-datetimepicker").Include(
             "~/Scripts/moment.js", "~/Scripts/bootstrap-datetimepicker.js"));
