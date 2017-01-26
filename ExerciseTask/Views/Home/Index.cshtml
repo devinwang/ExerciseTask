@@ -67,7 +67,7 @@
                         <div class="form-group" ng-class="{ 'has-error' : addExerciseForm.addExerciseName.$invalid && !addExerciseForm.addExerciseName.$pristine }">
                             <label class="col-md-3 control-label" for="addExerciseName">Name:</label>
                             <div class="col-sm-9">
-                                <input id="addExerciseName" name="addExerciseName" class="form-control" type="text" ng-model="newName" ng-required="true" ng-pattern="/^[A-z][_A-z0-9]{0,99}$/" ng-maxlength="100" required/>
+                                <input id="addExerciseName" name="addExerciseName" class="form-control" type="text" ng-model="newName" ng-required="true" ng-maxlength="100" required/>
                                 <div ng-class="{'invisible':addExerciseForm.addExerciseName.$valid || addExerciseForm.addExerciseName.$pristine}" class="help-block with-errors">Name is invalid.</div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                         <div class="form-group" ng-class="{ 'has-error' : editExerciseForm.editExerciseName.$invalid}">
                             <label class="col-md-3 control-label" for="editExerciseName">Name:</label>
                             <div class="col-sm-9">
-                                <input id="editExerciseName" name="editExerciseName" class="form-control" type="text" ng-model="editName" ng-required="true" ng-pattern="/^[A-z][_A-z0-9]{0,99}$/" ng-maxlength="100" required />
+                                <input id="editExerciseName" name="editExerciseName" class="form-control" type="text" ng-model="editName" ng-required="true" ng-maxlength="100" required />
                                 <div ng-class="{'invisible':editExerciseForm.editExerciseName.$valid}" class="help-block with-errors">Name is invalid.</div>
                             </div>
                         </div>

@@ -223,7 +223,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Content\Models\ExerciseModels.cs" />
+    <Compile Include="Models\ExerciseModels.cs" />
     <Compile Include="Services\IRespository.cs" />
     <Compile Include="Services\MemoryResponsitory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
