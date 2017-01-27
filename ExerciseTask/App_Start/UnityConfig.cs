@@ -41,7 +41,7 @@ namespace ExerciseTask.App_Start
             // container.RegisterType<IProductRepository, ProductRepository>();
 
             //container.RegisterInstance<IRespository<ExerciseRecord>, MemoryResponsitory<ExerciseRecord>>();
-            container.RegisterType<IRespository<ExerciseRecord>, MemoryResponsitory<ExerciseRecord>>(
+            container.RegisterType<IRepository<ExerciseRecord>, MemoryRepository<ExerciseRecord>>(
                 new ContainerControlledLifetimeManager());
             container.RegisterType<IExerciseService, ExerciseServiceImp>();
         }

@@ -11,7 +11,7 @@ namespace ExerciseTask.Services
     public class ExerciseServiceImp : IExerciseService
     {
         [Dependency]
-        public IRespository<ExerciseRecord> Respository { get; set; }
+        public IRepository<ExerciseRecord> Respository { get; set; }
 
         #region IMPLIMENTATION
         public bool AddRecord(ExerciseRecord record)
